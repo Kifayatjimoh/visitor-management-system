@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-image: url('./images/port7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 75px 0px;
+}
+.form-box{
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    border: 1px solid #fff;
+
+}
+.form-box input{
+    border-radius: 10px;
+}
+.form-box select{
+    border-radius: 10px;
+
+}
+.form-box input:focus{
+    box-shadow: 0 0 0;
+    border: 1px solid rgb(201, 32, 201);
+}
+.register-btn{
+    background-image: linear-gradient(to right, #63118b, #d61ed6, #d61ed6);
+    border: none;
+    border-radius: 10px;
+    
+}
+input[type="radio"]{
+    
+    accent-color: rgb(141, 9, 141);
+}
+.text h1{
+    font-size: 72.5px;
+}
+
+@media screen and (max-width: 992px) {
+    .text h2{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 767px){
+          .form-box{
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+          }
+          .text h1{
+            font-size: 45px;
+          }
+          .text h2{
+            font-size: 20px;
+          }
+}
+@media screen and (max-width: 465px){
+  .text  h1{
+        font-size: 37px;
+    }
+    .d-flex{
+        flex-direction: column;
+    }
+}

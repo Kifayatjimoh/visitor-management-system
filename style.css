@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  transition: width 0.3s;
+  overflow-x: hidden;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar li a:hover {
+  color: #ddd;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+.brand{
+  padding: 20px;
+  font-size: 18px;
+  margin-top: 18px;
+  color: #fff;
+}
+
+/* Hide all sections except the active one */
+.content section:not(.active) {
+  display: none;
+}
+
+
+
+
+
+
+/* Responsive CSS */
+
+/* Adjust the sidebar width for smaller screens */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 150px;
+  }
+  .sidebar.collapsed {
+    width: 0;
+  }
+  .brand-name {
+    display: none;
+  }
+}
+
+/* Hamburger Icon Styles */
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Hamburger Icon Styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+  }
+  .sidebar ul {
+    display: none;
+  }
+}
+
